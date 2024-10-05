@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(43, 101, 226);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 80px;
+    margin: 60px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+select, input, button {
+    width: 100%;

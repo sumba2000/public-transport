@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Booking System</h1>
+        <form id="booking-form">
+            <label for="route">Select Route:</label>
+            <select id="route" aria-label="Select Route">
+                <option value="" disabled selected>Select a route</option>
+            </select>
+
+            <label for="bus">Select Bus:</label>
+            <select id="bus" aria-label="Select Bus">
+                <option value="" disabled selected>Select a bus</option>
+            </select>
+
+            <label for="seat">Select Seat:</label>
+            <select id="seat" aria-label="Select Seat">
+                <option value="" disabled selected>Select a seat</option>
+            </select>
+
+            <label for="name">Passenger Name:</label>
+            <input type="text" id="name" required aria-label="Passenger Name">
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="number" id="mobile" required aria-label="Mobile Number">
+
+            <label for="pickup">Pick-Up Point:</label>
+            <select id="pickup" aria-label="Pick-Up Point">
+                <option value="" disabled selected>Select pick-up point</option>
+                <option value="Section 1">Section 1</option>
+                <option value="Section 2">Section 2</option>
+                <option value="Section 3">Section 3</option>
+            </select>
+
+            <label for="drop">Drop-Off Point:</label>
+            <select id="drop" aria-label="Drop-Off Point">
+                <option value="" disabled selected>Select drop-off point</option>
+                <option value="Section 1">Section 1</option>
+                <option value="Section 2">Section 2</option>
+                <option value="Section 3">Section 3</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="payment"></div>
+        <div id="bus-list"></div>
+    </div>
+
+    <div id="booked-seats">
+        <h3>Booked Seats</h3>
+        <ul id="booked-seats-list"></ul>
+    </div>
+
+    <div class="container">
+        <h2>Change Bus</h2>
+        <form id="change-bus-form">
+            <label for="change-booking-id">Booking ID:</label>
+            <input type="number" id="change-booking-id" required aria-label="Booking ID">
+
+            <label for="new-bus-id">New Bus ID:</label>
+            <input type="number" id="new-bus-id" required aria-label="New Bus ID">
+
+            <button type="submit">Change Bus</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Cancel Booking</h2>
+        <form id="cancel-booking-form">
+            <label for="cancel-booking-id">Booking ID:</label>
+            <input type="number" id="cancel-booking-id" required aria-label="Cancel Booking ID">
+
+            <button type="submit">Cancel Booking</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

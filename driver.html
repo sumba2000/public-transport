@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Admin Login Page -->
+<div id="admin-login">
+    <h2>Admin Login</h2>
+    <form id="admin-login-form">
+        <label for="admin-username">Username:</label>
+        <input type="text" id="admin-username" required>
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<!-- Admin Bookings Page -->
+<div id="admin-bookings" style="display: none;">
+    <h2>Bookings</h2>
+    <ul id="admin-bookings-list"></ul>
+    <button id="logout">Logout</button>
+</div>
+
+    <script src="driver.js"></script>
+</body>
+</html>
